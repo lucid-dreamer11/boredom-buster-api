@@ -10,10 +10,10 @@ useEffect(() => {
 },[])
 
 const getAdvice = async () => {
-const response = await fetch(`http://www.boredapi.com/api/activity/`);
-const data = await response.json();
-// console.log(data.activity);
-setAdvice(data.activity)
+    const response = await fetch(`http://www.boredapi.com/api/activity/`);
+    const data = await response.json();
+//  console.log(data.activity);
+    setAdvice(data.activity)
 }
 return (
     <div className="App">
